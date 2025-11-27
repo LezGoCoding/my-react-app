@@ -1,0 +1,126 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0F172A, #1E293B, #0F172A);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Floating glowing circles */
+.circle {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: pulse 6s infinite alternate ease-in-out;
+}
+
+.circle1 {
+  background: rgba(37, 99, 235, 0.3);
+  top: 60px;
+  left: 60px;
+}
+
+.circle2 {
+  background: rgba(168, 85, 247, 0.3);
+  bottom: 60px;
+  right: 60px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.3); opacity: 0.8; }
+}
+
+.login-card {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.login-card h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-card p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.error {
+  background: rgba(239, 68, 68, 0.85);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 13px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: 0.25s;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
+}
+
+.login-btn:hover {
+  background: #1e40af;
+  box-shadow: 0 0 18px rgba(37, 99, 235, 0.6);
+}
+
+.forgot {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.forgot span {
+  color: #93c5fd;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login_clr { 
+    color: #fff;
+}

@@ -1,0 +1,23 @@
+/* Sidebar.css */
+
+/* For small screens, hide the sidebar by default */
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block; /* Show hamburger icon */
+  }
+
+  aside {
+    display: none; /* Hide sidebar by default on small screens */
+  }
+}
+
+/* For larger screens, show the sidebar */
+@media (min-width: 769px) {
+  .hamburger-icon {
+    display: none; /* Hide hamburger icon on larger screens */
+  }
+
+  aside {
+    display: block; /* Sidebar is always visible */
+  }
+}
